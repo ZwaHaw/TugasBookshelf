@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Bookshelf</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <h1>My Bookshelf</h1>
+        <form class="header">
+            <input class="" type="text" id="bookTitle" name="" placeholder="Cari Buku ..." />
+        </form>
+    </header>
+
+    <div class="wrapper">
+        <div class="container bg-white shadow">
+            <h2 class="container-header text-center">Tambah Buku</h2>
+            <form class="form" action="#" id="form">
+                <label for="idbook">ID Buku</label>
+                <div class="form-group form-title">
+                    <input type="text" id="idbook" name="idbook" required placeholder=" " />
+                </div>
+                <label for="title">Judul Buku</label>
+                <div class="form-group form-title">
+                    <input type="text" id="title" name="title" required placeholder=" " />
+                </div>
+                <label for="author">Author</label>
+                <div class="form-group form-title">
+                    <input type="text" id="author" name="author" required placeholder=" " />
+                </div>
+                <label for="year">Tahun Terbit</label>
+                <div class="form-group form-title">
+                    <input type="number" id="year" name="year" required placeholder=" ">
+                </div>
+                <div class="button-container">
+                  <button type="submit" class="btn-submit" id="btn-submit">Sudah Baca</button>
+                  <button type="submit" class="btn-unread" id="btn-unread">Belum Baca</button> 
+              </div>
+              
+            </form>
+        </div>
+        <div class="container2">
+            <h2 class="container-header">Belum Selesai DiBaca : <span id="unread-book"></span></h2>
+            <div class="list-item" id="books"></div>
+        </div>
+        <div class="container2">
+            <h2 class="container-header">Sudah Selesai Dibaca : <span id="read-book"></span></h2>
+            <div class="list-item" id="books-items"></div>
+        </div>
+        <div class="container2">
+        <div class="jmlh-book">
+          <h3>Jumlah Buku:</h3>
+          <h4 id="total-books"></h4>
+            <button type="submit" class="btn-reset" id="btn-reset">Hapus Semua List</button>
+            <p>
+            <button type="button" class="btn-reset" id="btn-view">Lihat List</button>
+            </p>
+        </div>
+        </div>
+        <footer>
+            <p>&copy; F-05 Izwatulhusna Amatulmuiz || <a href="https://www.instagram.com/justin_seagull_0297/">instagram</a></p>
+        </footer>
+    </div>
+    <div class="no-list"></div>
+    <script src="main.js"></script>
+</body>
+</html>
